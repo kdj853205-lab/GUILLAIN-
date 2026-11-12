@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="rw">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="GUILLAIN NEWS — Amakuru yizewe kandi agezweho.">
+<title>GUILLAIN NEWS</title><link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header class="top"><div class="brand"><div class="mark">GN</div><div><b>GUILLAIN NEWS</b><small>Amakuru • Ukuri • Igihe</small></div></div>
+<div class="head-actions"><select id="lang" aria-label="Language"><option value="rw">Kinyarwanda</option><option value="en">English</option><option value="fr">Français</option></select><button id="loginBtn" class="outline">Injira</button><button id="registerBtn" class="primary">Iyandikishe</button></div></header>
+<nav id="nav"></nav>
+<main>
+<section class="hero"><div><span class="eyebrow">GUILLAIN NEWS</span><h1 id="heroTitle">Amakuru yizewe, igihe cyose.</h1><p id="heroText">Soma amakuru agezweho mu Rwanda no ku isi.</p></div><div class="hero-art">NEWS<br><span>24/7</span></div></section>
+<section class="tools"><input id="search" placeholder="Shakisha inkuru..."><select id="category"><option value="">Ibyiciro byose</option></select><button id="searchBtn" class="primary">Shakisha</button></section>
+<div class="section-title"><div><span class="eyebrow">IBIGEZEHO</span><h2 id="latestTitle">Amakuru aheruka</h2></div><span id="count" class="muted"></span></div>
+<section id="articles" class="articles"><p class="muted">Turimo kuzana amakuru...</p></section>
+<section id="adminPanel" class="admin hidden"><div class="section-title"><div><span class="eyebrow">UBUYOBOZI</span><h2>Shyiraho inkuru nshya</h2></div><button id="logoutBtn" class="outline">Sohoka</button></div>
+<form id="articleForm" class="form-grid"><input name="title_rw" placeholder="Umutwe mu Kinyarwanda" required><input name="title_en" placeholder="Title in English"><input name="title_fr" placeholder="Titre en français"><select name="category" required></select><input name="image_url" placeholder="URL y'ifoto (https://...)" type="url"><input name="author" placeholder="Umwanditsi"><textarea name="body_rw" placeholder="Inkuru mu Kinyarwanda" required></textarea><textarea name="body_en" placeholder="Article in English"></textarea><textarea name="body_fr" placeholder="Article en français"></textarea><button class="primary" type="submit">Bika inkuru</button></form>
+<h3>Inkuru zashyizweho</h3><div id="manageList"></div></section>
+</main>
+<footer><b>GUILLAIN NEWS</b><p>Amakuru yizewe • Rwanda</p><small>© <span id="year"></span> GUILLAIN NEWS. All rights reserved.</small></footer>
+<div id="modal" class="modal hidden"><div class="dialog"><button class="x" id="closeModal">×</button><div id="modalContent"></div></div></div>
+<script src="/app.js"></script>
+</body></html>
